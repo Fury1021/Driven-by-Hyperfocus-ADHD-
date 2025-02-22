@@ -1,0 +1,322 @@
+html, body {
+    height: 100%; /* Ensure the HTML and body elements take up the full height */
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least the full height of the viewport */
+}
+
+.header-blue {
+    background: linear-gradient(135deg, #172a74, #21a9af);
+    color: #fff;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #172a74, #21a9af);
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+.container {
+    max-width: 1200px; /* Limit the container width */
+    margin: 0 auto; /* Center the container */
+}
+
+.main-content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1; /* Allow this section to expand and push footer down */
+}
+
+.task-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.taskboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.quadrant {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px; /* Increased max-width for better appearance */
+    padding: 20px;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.quadrant:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.quadrant h2 {
+    font-size: 20px; /* Increased font size */
+    margin-bottom: 10px;
+}
+
+.quadrant p {
+    margin: 0;
+}
+
+.progress {
+    position: relative;
+    height: 20px;
+    margin-top: 10px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #4caf50; /* Slightly different green */
+    transition: width 0.4s ease-in-out; /* Slightly longer transition */
+    border-radius: 10px;
+}
+
+
+.chart-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the chart horizontally within the column */
+    padding: 10px;
+    margin-top: 120px; /* Add top margin to push the chart down */
+}
+
+.chart-wrapper {
+    max-width: 400px; /* Adjust max-width if needed */
+    width: 100%; /* Full width within the chart container */
+    background-color: #fff; /* Background for the chart wrapper */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+
+/* Optional: Adjust for smaller screens */
+@media (max-width: 768px) {
+    .chart-container {
+        width: 100%; /* Full width on small screens */
+        padding: 10px;
+    }
+
+    .chart-wrapper {
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0; /* Increased padding */
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for footer */
+}
+
+.footer .social-link {
+    color: white;
+    margin-right: 10px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+header {
+    position: fixed; /* Fix the header position */
+    top: 0; /* Align to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+
+.navbar-nav .nav-item {
+    display: inline-block; /* Keep items in one line */
+}
+
+.navbar-collapse {
+    display: flex; /* Use flexbox for the navbar items */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar img {
+    max-height: 50px; /* Adjust logo size as needed */
+    margin-right: 15px; /* Space between logo and nav items */
+}
+
+.navbar-text {
+    margin-left: auto; /* Push log out link to the right */
+}
+
+/* Ensure the navbar is responsive */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align to start */
+    }
+
+    .navbar-collapse {
+        flex-wrap: wrap; /* Allow wrapping for mobile */
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Align toggler to the right */
+    }
+
+    /* Adjust the navbar for smaller screens */
+    .navbar {
+        padding: 5px; /* Reduce padding on smaller screens */
+    }
+}
+h3{
+    color: black;
+    text-align: center;
+}
+/* Adjust body to prevent overlap with fixed navbar */
+body {
+    padding-top: 80px; /* Adjust this value based on the height of your navbar */
+}        
+
+
+.text-center {
+    text-align: center; /* Center the text */
+}
+
+.bold-text {
+    font-weight: bold; /* Make the text bold */
+}
+
+body {
+    background-color: #f8f9fa; /* Light background color for contrast */
+}
+
+.survey-container {
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 30px; /* Padding inside the container */
+    margin-top: 30px; /* Space above the container */
+}
+
+h1 {
+    color: black; /* Set heading color to black */
+}
+
+h2 {
+    color: #007bff; /* Set section title color */
+    margin-top: 20px; /* Space above section titles */
+}
+
+table {
+    width: 100%; /* Full width for the table */
+    margin-bottom: 20px; /* Space below the table */
+}
+
+th, td {
+    text-align: left; /* Align text to the left */
+    color: black; /* Black text color */
+    padding: 8px; /* Add padding for better spacing */
+}
+
+.message {
+    color: black; /* Set message text color */
+    margin-bottom: 20px; /* Space below the message */
+    font-weight: bold; /* Bold text for visibility */
+    background-color: beige; /* Soft orange background */
+    padding: 15px; /* Add padding around the text */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center the text */
+}
+
+
+th {
+    background-color: #f1f1f1; /* Light grey background for headers */
+}
+
+.submit-btn {
+    background-color: #007BFF; /* Blue color for Survey History button */
+    color: white;              /* Text color */
+    padding: 10px 15px;       /* Adjust padding for the button */
+    border: none;             /* Remove border */
+    border-radius: 5px;      /* Rounded corners */
+    text-decoration: none;    /* Remove underline */
+    cursor: pointer;          /* Change cursor to pointer */
+    display: inline-block;     /* Ensure it behaves like a button */
+    margin-right: 10px;      /* Add space to the right */
+}
+
+.submit-btn.submit-survey { 
+    background-color: #28a745; /* Green color for Submit Survey button */
+}
+
+.submit-btn:hover {
+    background-color: #0056b3; /* Darker blue for hover effect on Survey History */
+    color: white;               /* Ensure text stays white on hover */
+    text-decoration: none;      /* Remove underline on hover */
+}
+
+.submit-btn.submit-survey:hover {
+    background-color: #218838; /* Darker shade of green for hover effect */
+}   
+
+
+
+footer {
+    background-color: black; /* Footer background color */
+    color: white; /* Footer text color */
+}
+
+input[type="radio"] {
+    transform: scale(1.5); /* Adjust this value to increase/decrease size */
+    margin: 0 10px; /* Optional: add space around the radio buttons */
+}
+
+
+
+#productivityChart {
+    max-width: 600px; /* Adjust the size here */
+    max-height: 600px; /* Adjust the size here */
+    margin: 0 auto; /* Center the chart */
+    }
+
+        #activenessChart{
+    max-width: 600px; /* Adjust the size here */
+    max-height: 600px; /* Adjust the size here */
+    margin: 0 auto; /* Center the chart */
+ }

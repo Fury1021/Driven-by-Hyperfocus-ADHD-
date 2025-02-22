@@ -1,0 +1,271 @@
+       /* Reset styles */
+       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Body styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        
+        margin: 0;
+        height: 100vh;
+        /* Make body full screen height */
+        overflow: hidden;
+        /* Hide any overflow content */
+        
+    }
+
+    /* Container styles */
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Header styles */
+    header {
+        background-color: #004aad;
+        color: #fff;
+        padding: 20px 0;
+        text-align: left;
+        /* Align text to the left */
+        display: flex;
+        /* Use flexbox for alignment */
+        align-items: center;
+        /* Center vertically */
+        justify-content: space-between;
+        /* Distribute items evenly */
+    }
+
+    header h1 {
+        margin-left: 20px;
+        /* Add left margin to "DBH" */
+    }
+    header h1 a {
+     color: white;
+     text-decoration: none;
+ }
+
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+
+    /* Section styles */
+    .carousel-slide.active section {
+        margin-right: px;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: white;
+
+    }
+
+    section h2 {
+        color: #fff;
+        /* Set text color to white */
+        margin-bottom: 10px;
+    }
+
+    section p {
+        line-height: 1.6;
+    }
+
+    /* Form styles */
+    form {
+        margin-top: 20px;
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"]
+     {
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    buttonLearnmore {
+        background-color: orange;
+        color: #fff;
+        border: none;
+        position: absolute;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: orange;
+        color: #fff;
+        border: none;
+        position: absolute;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    /* Footer styles */
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+
+    /* DROPDOWN */
+    .dropbtn {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+    /* Style the dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    /* Style the links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* Add a dark background color to dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* CAROUSEL */
+
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+    }
+
+    .background-carousel {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .carousel-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    .carousel-slide.active {
+        opacity: 1;
+    }
+
+    .carouselcontent section {
+     margin-right: px;
+     position: absolute;
+     top: 30%;
+     left: 30%;
+     transform: translate(-50%, -50%);
+     z-index: 2;
+     color: white;
+     transition: opacity 0.5s;
+     }
+
+
+    .background-carousel button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+
+
+    .prev {
+        left: 10px;
+    }
+
+
+    .next {
+        right: 10px;
+    }
+
+
+    .form-box {
+    position: absolute;
+    top: 50%; /* Adjust top position as needed */
+    right:10%; /* Adjust left position as needed */
+    transform: translateY(-50%);
+    z-index: 2; /* Ensure the form-box is on top of other elements */
+    background-color: #fff; /* Set background color */
+    padding: 20px; /* Add padding for spacing */
+
+}
+
+
+.background-carousel {
+    position: relative; /* Ensure the carousel is positioned relative to its container */
+}
+
+
+.form-box button {
+    background-color: red  ;
+    display: flex;
+}
+
+

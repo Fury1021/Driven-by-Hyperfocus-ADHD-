@@ -1,0 +1,43 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# If a directory or a file exists, use it
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise, forward the request to index.php
+RewriteRule ^(.*)$ index.php [L]
+
+# Custom Error Pages
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# Prevent directory listing
+Options -Indexes
+
+# Set the default index file
+DirectoryIndex index.php
+
+# Protect .htaccess from being accessed
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Disable access to sensitive files
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|bak)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Limit file upload size (optional)
+php_value upload_max_filesize 10M
+php_value post_max_size 10M
+
+# Set the time zone (optional)
+SetEnv TZ America/New_York
+
+# Force HTTPS (optional)
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+

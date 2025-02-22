@@ -1,0 +1,127 @@
+/* Apply overflow hidden to the entire page */
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    margin: 0;
+}
+
+/* Set background gradient */
+html {
+    background: linear-gradient(to bottom, #2596be, #475d62); /* Blue gradient */
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Custom CSS for navbar */
+.header-blue .navbar {
+    background: rgba(30, 40, 51, 0.9); /* Semi-transparent for readability */
+    padding: 0.75rem;
+    color: #fff;
+    width: 100%;
+    z-index: 10;
+    position: fixed; /* Fixed to the top for consistent navigation */
+}
+
+.navbar-nav .nav-item .nav-link {
+    white-space: nowrap;
+}
+
+/* Responsive navbar adjustments */
+@media (max-width: 768px) {
+    .header-blue .navbar-collapse {
+        background: #1e2833;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+
+/* Form container */
+.login-dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #2596be, #475d62); /* Blue gradient */
+    padding: 20px;
+}
+
+.login-dark form {
+    max-width: 320px;
+    width: 100%;
+    background-color: #1e2833;
+    padding: 30px;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Admin logo (replace with actual image path) */
+.login-dark .admin-logo {
+    text-align: center;
+    padding: 15px 0 20px;
+}
+
+.login-dark .admin-logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #2980ef; /* Blue background for admin */
+    padding: 10px;
+}
+
+/* Input styling */
+.login-dark form .form-control {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #434a52;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+}
+
+/* Button styling */
+.login-dark form .btn-primary {
+    background: #214a80; /* Darker blue button */
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 26px;
+}
+
+/* Forgot password link */
+.login-dark form .forgot {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+}
+
+/* Error message */
+.login-dark .alert-danger {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    position: relative; /* To prevent overlap */
+}
+
+/* Responsive adjustments for form */
+@media (max-width: 576px) {
+    .login-dark form {
+        padding: 20px 15px;
+    }
+}

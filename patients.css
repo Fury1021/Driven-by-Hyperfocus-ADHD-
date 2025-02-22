@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    background: linear-gradient(to bottom, #2596be, #475d62); /* Keeping the gradient background */
+    background-size: cover;
+}
+
+.header-blue .navbar {
+    background: rgba(30, 40, 51, 0.9);
+    padding: 0.75rem 1rem;
+    color: #fff;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+}
+
+body {
+    padding-top: 70px; /* Ensure space between header and content */
+}
+
+
+
+.footer {
+    background-color: white; /* White background for the footer */
+    color: black; /* Black text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Card-style buttons */
+.card-button {
+    display: block;
+    background-color: #214a80;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 1.2rem;
+}
+
+.card-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}

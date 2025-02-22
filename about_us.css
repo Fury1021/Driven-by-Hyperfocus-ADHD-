@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: linear-gradient(to bottom, #2596be, #475d62);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-blue .navbar {
+    background-color: #1d1d1d;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    z-index: 11;
+    position: absolute;
+    width: 100%;
+}
+
+.header-blue .navbar .navbar-brand {
+    font-weight: bold;
+    color: inherit;
+}
+
+.header-blue .navbar .navbar-brand:hover {
+    color: #f0f0f0;
+}
+
+/* Removed the border-top property from this rule */
+.header-blue .navbar .navbar-collapse {
+    margin-top: 0.5rem;
+}
+
+.header-blue .navbar .navbar-collapse span .login {
+    color: #d9d9d9;
+    margin-right: 0.5rem;
+    text-decoration: none;
+}
+
+.header-blue .navbar .navbar-collapse span .login:hover {
+    color: #fff;
+}
+
+.header-blue .navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-blue .navbar .navbar-toggler:hover,
+.header-blue .navbar-toggler:focus {
+    
+}
+
+.header-blue .navbar .navbar-nav a.active,
+.header-blue .navbar .navbar-nav > .show .dropdown-item {
+    background: none;
+    box-shadow: none;
+}
+
+.header-blue .navbar-nav .nav-link {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+.header-blue .navbar .navbar-nav > li > .dropdown-menu {
+    margin-top: -5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.header-blue .navbar .dropdown-menu .dropdown-item:focus,
+.header-blue .navbar .dropdown-menu .dropdown-item {
+    line-height: 2;
+    color: #37434d;
+}
+
+.header-blue .navbar .dropdown-menu .dropdown-item:focus,
+.header-blue .navbar .dropdown-menu .dropdown-item:hover {
+    background: #ebeff1;
+}
+
+.header-blue .action-button,
+.header-blue .action-button:not(.disabled):active {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 40px;
+    color: #ebeff1;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0.3rem 0.8rem;
+    background: transparent;
+    transition: background-color 0.25s;
+    outline: none;
+}
+
+.header-blue .action-button:hover {
+    color: #fff;
+}
+
+.about-section {
+    padding: 60px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px; /* Ensure the content doesn't collide with the header */
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #555;
+}
+
+.about-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer {
+    background: #f7f7f7;
+}
+
+.footer .social-link {
+    color: #37434d;
+}
+
+.footer .social-link:hover {
+    color: #475d62;
+}
+
+.footer .text-muted {
+    color: #6c757d !important;
+}
+
+.footer a {
+    color: #37434d;
+}
+
+.footer a:hover {
+    color: #475d62;
+}
